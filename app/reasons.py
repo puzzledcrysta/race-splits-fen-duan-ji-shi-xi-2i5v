@@ -9,6 +9,7 @@ REASONS = {
     'AMOUNT_DELTA': '复算与外部账计量不同', 'BOOK_CONFLICT': '独立账含重复业务键',
     'RUN_UNKNOWN': '没有此批次', 'DEMO_UNKNOWN': '没有此样例', 'STALE': '复核版本已过期',
     'REVIEW_NOTE': '有差异时须填写复核意见', 'REVIEW_DECISION': '复核结论无效',
+    'OFFICIAL_UNSIGNED': '补正尚未签核确认', 'OFFICIAL_LOCKED': '正式成绩签核已锁定',
 }
 
 REASONS.update({'RACE_CHAIN': '检查点配置无效', 'RACE_READER': '未知计时点', 'RACE_GAP': '未找到可接续读数', 'DATE': '日期格式无效', 'REV_BLOCKED': '较新来源尚未采信'})

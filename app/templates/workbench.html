@@ -28,6 +28,14 @@
 <div class="kpi"><small>净差</small><strong data-count="delta">—</strong><span>秒</span></div>
         </section>
         <div class="grid">
+    <section class="panel official" id="official-panel" hidden aria-labelledby="official-title">
+      <div class="panel__head"><h2 id="official-title">正式成绩</h2><span class="num" id="official-version">—</span></div>
+      <div class="panel__body">
+        <p id="official-state" role="status"></p>
+        <div class="actions" id="official-actions"></div>
+        <div id="impact"></div>
+      </div>
+    </section>
     <section class="panel source" aria-labelledby="input-title">
       <div class="panel__head"><h2 id="input-title">芯片批次</h2><small>CSV</small></div>
       <form id="source" class="panel__body">
@@ -63,6 +71,6 @@
       <footer class="statusbar"><span id="state" role="status">等待输入</span><a href="/openapi.json">接口</a><span>UTC</span></footer>
     </div>
   </div>
-  <script type="application/json" id="settings">{{ {'reasons': reasons, 'tabs': tabs, 'unit': unit, 'key': key}|tojson }}</script>
+  <script type="application/json" id="settings">{{ {'reasons': reasons, 'tabs': tabs, 'unit': unit, 'key': key, 'kinds': kinds}|tojson }}</script>
 </body>
 </html>
